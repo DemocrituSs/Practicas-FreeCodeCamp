@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Formulario particular</h1>
+        <p id="description">Gracias por completar nuestro formulario</p>
+    </header>
+    <form method="post" action="" id="survey-form">
+        <fieldset>
+            <div class="form-group">
+                <label for="name" id="name-label">Ingrese su nombre: </label>
+                <input 
+                    type="text"
+                    name="name"  
+                    id="name" 
+                    class="form-control"
+                    placeholder="Diego Armando" 
+                    required 
+                />
+            </label>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Ingrese su email: </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="marad10s@fulbo.com" 
+                    required 
+                />
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Ingrese su edad: </label>
+                <input 
+                    type="number" 
+                    id="number" 
+                    name="number" 
+                    min="0" 
+                    max="120" 
+                    placeholder="27" 
+                    required 
+                />
+            </div>
+            <div>
+                <label for=""> Ciudad
+                    <select name="" id="dropdown">
+                        <option value="ciudad1"> Seleccione su ciudad</option>
+                        <option value="ciudad2"> Trelew</option>
+                        <option value="ciudad3"> Comodoro Rivadavia</option>
+                        <option value="ciudad3"> Caleta Olivia</option>
+                    </select>
+                </label>
+            </div>    
+            <div class="form-group">
+                <p>Elija alguna de estas opciones:</p>
+                <label>
+                    <input 
+                        type="radio" 
+                        value="1" 
+                        name="boton1"
+                    /> Boton 1
+                </label>
+                <label>
+                    <input 
+                        type="radio" 
+                        value="2" 
+                        name="boton1"
+                    /> Boton 2
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Elija las opciones correspondientes</p>
+                <label for=""><input type="checkbox" value="option1"/> Opcion 1</label>
+                <label for=""><input type="checkbox" value="option2"/> Opcion 2</label>
+                <label for=""><input type="checkbox" value="option3"/> Opcion 3</label>
+            </div>
+            <div>
+                <label for="">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </label>
+            </div>
+            <input type="submit" id="submit"/>
+        </fieldset>
+    </form>
+</body>
+</html>
